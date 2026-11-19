@@ -5,9 +5,9 @@
 
 export const LINKS = {
   repo: "https://github.com/wavemoran/openpuck",
-  install: "https://github.com/wavemoran/openpuck/blob/main/docs/install.md",
-  guide: "https://github.com/wavemoran/openpuck/blob/main/docs/user-guide.md",
-  trouble: "https://github.com/wavemoran/openpuck/blob/main/docs/troubleshooting.md",
+  firefox: "https://www.mozilla.org/firefox/new/",
+  guide: "guide.html",
+  trouble: "guide.html#trouble",
 };
 
 /** Create an element. Props: class, on<event> handlers, true/false attributes. Kids: nodes or text. */
@@ -335,8 +335,8 @@ export function createView({ mode, refs, cues, bridge, handlers, setBusy }) {
         ". Store it somewhere safe and private. You need it to go back to the original software."),
       para("You can unplug the puck now."),
       el("div", { class: "actions" },
-        el("a", { class: "btn primary big", href: LINKS.guide, target: "_blank", rel: "noopener" }, "Read the user guide"),
-        el("a", { class: "btn secondary", href: LINKS.repo, target: "_blank", rel: "noopener" }, "View on GitHub")),
+        el("a", { class: "btn primary big", href: LINKS.guide, target: "_blank", rel: "noopener" }, "Read the PorgPuck guide"),
+        el("a", { class: "btn secondary", href: LINKS.repo, target: "_blank", rel: "noopener" }, "Based on OpenPuck")),
     ], { id: "done" });
   }
 

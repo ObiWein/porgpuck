@@ -119,3 +119,12 @@ footer .disclaimer { margin-bottom: 16px; }
 .sound-row { text-align: center; margin: -8px 0 16px; }
 .sound-toggle { border: 1px solid var(--line); border-radius: 999px; padding: 4px 16px; color: var(--fg); }
 .ack + .note { margin-top: 16px; }
+
+/* PorgPuck: subtitle under the page title, and the guide page */
+.subtitle { color: var(--muted); margin: -8px 0 24px; }
+.guide h2 { font-size: 1.25rem; margin: 32px 0 12px; scroll-margin-top: 16px; }
+.guide ul { padding-left: 1.25rem; margin: 0 0 16px; }
+.guide li { margin-bottom: 8px; }
+.toc { padding: 16px 24px; }
+.toc ul { margin: 0; }
+.toc li { margin-bottom: 4px; }

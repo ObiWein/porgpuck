@@ -55,8 +55,7 @@ async function main() {
     view.log(`unsupported: ${support.reason}`);
     view.showMessage("This browser can't restore your puck", [
       el("p", {}, support.message),
-      el("p", {}, "You can also use the ", el("a", { href: `${LINKS.install}#going-back-to-the-original-software` },
-        "command-line instructions"), "."),
+      support.reason === "mobile" ? null : el("p", {}, "Get ", el("a", { href: LINKS.firefox }, "Firefox"), " (free), then open this page in it. On Windows or Linux, Chrome and Edge work too."),
     ]);
     return;
   }

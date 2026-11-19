@@ -1,0 +1,118 @@
+<!doctype html>
+<!-- PorgPuck guide: how to use the puck, and help with installing. Static page, no scripts. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>PorgPuck guide</title>
+<link rel="icon" href="img/porgpuck-avatar.png" type="image/png">
+<link rel="apple-touch-icon" href="img/porgpuck-avatar.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <picture class="logo">
+    <source media="(prefers-color-scheme: dark)" srcset="img/porgpuck-lockup.png">
+    <img src="img/porgpuck-lockup-light.png" alt="PorgPuck" height="34">
+  </picture>
+  <div class="tools">
+    <a class="quiet" href="https://github.com/wavemoran/openpuck" target="_blank" rel="noopener" aria-label="Based on OpenPuck, on GitHub"><svg class="gh" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>Based on OpenPuck</span></a>
+  </div>
+</header>
+<main id="main" class="guide">
+  <h1>PorgPuck guide</h1>
+  <p class="subtitle">Porg Depot's Star Wars: Unlimited build of <a href="https://github.com/wavemoran/openpuck">OpenPuck</a>, the free, open-source software for the Life Puck.</p>
+  <nav class="card toc" aria-label="Contents">
+    <ul class="plain">
+      <li><a href="#counting">Counting base damage</a></li>
+      <li><a href="#two">Two players</a></li>
+      <li><a href="#menu">The menu</a></li>
+      <li><a href="#power">The power button</a></li>
+      <li><a href="#timer">The timer</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#trouble">Troubleshooting</a></li>
+      <li><a href="#about">About PorgPuck and OpenPuck</a></li>
+    </ul>
+  </nav>
+
+  <h2 id="counting">Counting base damage</h2>
+  <p>PorgPuck counts the damage on your base. A new game starts at 0 and counts up to your base's HP (30 unless you change it in <a href="#settings">Settings</a>).</p>
+  <ul>
+    <li><strong>Tap the top half</strong> to add 1 damage. <strong>Tap the bottom half</strong> to heal 1.</li>
+    <li><strong>Press and hold</strong> to change by 5. Keep holding and it keeps going, 5 at a time.</li>
+    <li>A small running change such as <strong>+3</strong> shows at the top for a moment. Damage shows in red, healing in green.</li>
+    <li>A porg reacts to every change: it cries when you take damage, cheers when you heal, and screams when your base has 5 HP or less left.</li>
+    <li>When the damage reaches your base HP, your base is destroyed and a big crying porg takes the place of the number. Heal and the number comes back.</li>
+    <li>A short line under the number shows which way is up, for numbers like 6 and 9 that read differently upside down.</li>
+  </ul>
+
+  <h2 id="two">Two players</h2>
+  <p>Switch to two players in Settings, under <strong>Players</strong>. The screen splits into two halves, one per player, and the bottom half is yours.</p>
+  <ul>
+    <li>Both numbers face you, the puck's owner, so you can track both bases from your side of the table. Turn on <strong>Face opponent</strong> in Settings to turn the top half around for the player across from you.</li>
+    <li>Each half has a <strong>&minus;</strong> on the left and a <strong>+</strong> on the right. Tap for 1, hold for 5.</li>
+    <li>Each player has their own base HP and colors. The reaction porgs are left out in two-player games so the screen stays readable, but a destroyed base still gets its crying porg.</li>
+    <li>The timer and the battery sit on the line between the halves.</li>
+  </ul>
+
+  <h2 id="menu">The menu</h2>
+  <p><strong>Press and hold the center of the screen</strong> to open the menu. Touch a corner and lift your finger inside it to pick it. Tap the porg in the middle to close the menu.</p>
+  <ul>
+    <li><strong>New game</strong> (top left): starts over right away. Every count goes back to 0, the history is cleared and the timer resets.</li>
+    <li><strong>Timer</strong> (top right): start, pause or reset the timer, set its length, or turn it off.</li>
+    <li><strong>History</strong> (bottom right): every change since the game started, newest first. Quick taps are combined into one row.</li>
+    <li><strong>Settings</strong> (bottom left): see <a href="#settings">Settings</a>.</li>
+  </ul>
+  <p>Settings, History, Colors and the timer length page all have a <strong>&lsaquo; back</strong> button at the top, so you don't have to scroll to the bottom to leave.</p>
+
+  <h2 id="power">The power button</h2>
+  <ul>
+    <li><strong>Press:</strong> on the counter, starts or pauses the timer (when the timer is on). Anywhere else, goes back one step.</li>
+    <li><strong>Hold for 2 seconds:</strong> turns the puck off. It also turns itself off after it has been left alone for a while, but never while the timer is running.</li>
+  </ul>
+
+  <h2 id="timer">The timer</h2>
+  <p>The timer counts down from its length (55 minutes at first). The length can be 5 to 99 minutes: tap &minus; or + to change it by 1 minute, or hold to jump along the 5s. When time runs out it keeps going into overtime, shown as <strong>+0:42</strong> in orange-red. If you turn the puck off, the timer comes back paused.</p>
+
+  <h2 id="settings">Settings</h2>
+  <p>Open Settings from the menu. Changes apply right away and are saved.</p>
+  <ul>
+    <li><strong>Players:</strong> one or two players. Changing it starts a new game.</li>
+    <li><strong>Face opponent</strong> (two players only): turns the top half around for the player across from you.</li>
+    <li><strong>Base HP:</strong> each player's base HP, from 1 to 99. Hold &minus; or + to change it quickly.</li>
+    <li><strong>Colors:</strong> each player's background and number colors, with porg presets (white, orange and gray) and custom colors.</li>
+    <li><strong>Brightness, Battery, Timer length, Auto-off:</strong> screen brightness, how the battery shows, the timer's length, and when the puck turns itself off.</li>
+  </ul>
+  <p>The software version (for example &ldquo;PorgPuck v1.0&rdquo;) shows at the bottom of Settings.</p>
+
+  <h2 id="trouble">Troubleshooting</h2>
+  <h3>Installing</h3>
+  <ul>
+    <li><strong>The page says my browser won't work.</strong> On a Mac, use <a href="https://www.mozilla.org/firefox/new/">Firefox</a> (free). Chrome, Edge and other Chromium browsers on a Mac lose data while reading the puck, so they can't make a complete backup. On Windows or Linux, Chrome, Edge or Firefox all work. Phones, tablets and Safari can't install.</li>
+    <li><strong>My puck is not in the list.</strong> Use a USB-C cable that carries data (many cables only charge), make sure the puck is on, and try another USB port.</li>
+    <li><strong>It asks me to hold the power button.</strong> That's normal while the original software is on the puck. Hold it until the page tells you to let go.</li>
+    <li><strong>The backup keeps failing.</strong> Try another cable or USB port.</li>
+    <li><strong>An error appeared while writing.</strong> Don't unplug the puck. Click <strong>Try again</strong>, or use the <a href="restore.html">restore page</a> with your backup file.</li>
+    <li><strong>The puck stays dark after installing.</strong> Press the power button.</li>
+  </ul>
+  <h3>Using the puck</h3>
+  <ul>
+    <li><strong>The number changed when I wanted the menu.</strong> The menu opens when you hold the very center. Holding the top or bottom changes the number by 5.</li>
+    <li><strong>The timer is missing.</strong> It was turned off. Hold the center, choose Timer, then Timer on.</li>
+    <li><strong>The puck turned itself off.</strong> That's auto-off. Change it in Settings, under Auto-off.</li>
+    <li><strong>My last tap was lost.</strong> Changes are saved a couple of seconds after you stop tapping. If power is lost sooner, the last change may not be saved.</li>
+  </ul>
+
+  <h2 id="about">About PorgPuck and OpenPuck</h2>
+  <p>PorgPuck is built on <a href="https://github.com/wavemoran/openpuck">OpenPuck</a>, free, open-source replacement software for the Life Puck. Porg Depot changed it for Star Wars: Unlimited (counting base damage up instead of life down) and added the porgs. Everything else, from the installer on this site to the timer and history, comes from OpenPuck. OpenPuck is released under the <a href="LICENSE.txt">Apache License 2.0</a>; see the <a href="NOTICE.txt">notices</a> for credits. The porg art belongs to Porg Depot.</p>
+  <p><a class="btn primary" href="index.html">Install PorgPuck</a></p>
+</main>
+<footer>
+  <p class="disclaimer">PorgPuck is an unofficial fan build by Porg Depot, based on <a href="https://github.com/wavemoran/openpuck">OpenPuck</a>. Neither is affiliated with or supported by MetalFab Tokens, the maker of the Life Puck. Use at your own risk.</p>
+  <p class="links"><a href="index.html">Install PorgPuck</a> · <a href="LICENSE.txt">License</a> · <a href="NOTICE.txt">Notices</a></p>
+  <p class="links"><a href="restore.html">Go back to the original software</a></p>
+</footer>
+</body>
+</html>
